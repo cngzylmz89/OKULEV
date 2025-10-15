@@ -550,6 +550,11 @@ namespace PERFORMANS
             
         }
 
-        
+        private void btnogretmendurum_Click(object sender, EventArgs e)
+        {
+            frmogretmendurum frmogretmendurum = new frmogretmendurum();
+            frmogretmendurum.Show();
+
+        }
     }
 }

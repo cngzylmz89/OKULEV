@@ -189,23 +189,23 @@ namespace PERFORMANS
             kacincigun = (int)DateTime.Now.DayOfWeek;
             switch (kacincigun)
             {
-                case 1:label1.ForeColor = Color.Red; 
+                case 1:label1.ForeColor = Color.White; 
                    label1.Font = new Font(label1.Font, FontStyle.Bold);
                     label1.BackColor=Color.RoyalBlue;
                     break;
-                case 2: label2.ForeColor = Color.Red;
+                case 2: label2.ForeColor = Color.White;
                     label2.Font = new Font(label2.Font, FontStyle.Bold);
                     label2.BackColor=Color.RoyalBlue;
                     break;
-                case 3: label3.ForeColor = Color.Red; 
+                case 3: label3.ForeColor = Color.White; 
                     label3.Font = new Font(label3.Font, FontStyle.Bold);
                     label3.BackColor=Color.RoyalBlue;
                     break;
-                case 4: label4.ForeColor = Color.Red; 
+                case 4: label4.ForeColor = Color.White; 
                     label4.Font = new Font(label4.Font, FontStyle.Bold);
                     label4.BackColor=Color.RoyalBlue;
                     break;
-                case 5: label5.ForeColor = Color.Red; 
+                case 5: label5.ForeColor = Color.White; 
                     label5.Font = new Font(label5.Font, FontStyle.Bold); 
                     label5.BackColor=Color.RoyalBlue;
                     break;
@@ -1538,11 +1538,19 @@ namespace PERFORMANS
             dersprogramigetir();
 
         }
-        
+        public string rolum;
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            
-            Application.Exit();
+            if (rolum == "yonetici")
+            {
+                this.Close();
+
+            }
+            else
+            {
+
+                Application.Exit();
+            }
             
         }
 
@@ -2363,6 +2371,1712 @@ namespace PERFORMANS
                 }
             }
             else if (btntuesday4.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btntuesday5_Click(object sender, EventArgs e)
+        {
+            if (btntuesday5.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Salı gününün 5. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = tuesday5dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = tuesday5sinifid;
+                            frmanaform.derssaati = 5;
+                            frmanaform.gun = "Tuesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = tuesday5dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = tuesday5sinifid;
+                            frmanaform.derssaati = 5;
+                            frmanaform.gun = "Tuesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btntuesday5.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void btntuesday6_Click(object sender, EventArgs e)
+        {
+            if (btntuesday6.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Salı gününün 6. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = tuesday6dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = tuesday6sinifid;
+                            frmanaform.derssaati = 6;
+                            frmanaform.gun = "Tuesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = tuesday6dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = tuesday6sinifid;
+                            frmanaform.derssaati = 6;
+                            frmanaform.gun = "Tuesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btntuesday6.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btntuesday7_Click(object sender, EventArgs e)
+        {
+            if (btntuesday7.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Salı gününün 7. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = tuesday7dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = tuesday7sinifid;
+                            frmanaform.derssaati = 7;
+                            frmanaform.gun = "Tuesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = tuesday7dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = tuesday7sinifid;
+                            frmanaform.derssaati = 7;
+                            frmanaform.gun = "Tuesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btntuesday7.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnwednesday1_Click(object sender, EventArgs e)
+        {
+            if (btnwednesday1.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Çarşamba gününün 1. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday1dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday1sinifid;
+                            frmanaform.derssaati = 1;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday1dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday1sinifid;
+                            frmanaform.derssaati = 1;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnwednesday1.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnwednesday2_Click(object sender, EventArgs e)
+        {
+            if (btnwednesday2.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Çarşamba gününün 2. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday2dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday2sinifid;
+                            frmanaform.derssaati = 2;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday2dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday2sinifid;
+                            frmanaform.derssaati = 2;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnwednesday2.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnwednesday3_Click(object sender, EventArgs e)
+        {
+            if (btnwednesday3.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Çarşamba gününün 3. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday3dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday3sinifid;
+                            frmanaform.derssaati = 3;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday3dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday3sinifid;
+                            frmanaform.derssaati = 3;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnwednesday3.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnwednesday4_Click(object sender, EventArgs e)
+        {
+            if (btnwednesday4.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Çarşamba gününün 4. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday4dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday4sinifid;
+                            frmanaform.derssaati = 4;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday4dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday4sinifid;
+                            frmanaform.derssaati = 4;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnwednesday4.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnwednesday5_Click(object sender, EventArgs e)
+        {
+            if (btnwednesday5.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Çarşamba gününün 5. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday5dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday5sinifid;
+                            frmanaform.derssaati = 5;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday5dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday5sinifid;
+                            frmanaform.derssaati = 5;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnwednesday5.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnwednesday6_Click(object sender, EventArgs e)
+        {
+            if (btnwednesday6.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Çarşamba gününün 6. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday6dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday6sinifid;
+                            frmanaform.derssaati = 6;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday6dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday6sinifid;
+                            frmanaform.derssaati = 6;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnwednesday6.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnwednesday7_Click(object sender, EventArgs e)
+        {
+            if (btnwednesday7.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Çarşamba gününün 7. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday7dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday7sinifid;
+                            frmanaform.derssaati = 7;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = wednesday7dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = wednesday7sinifid;
+                            frmanaform.derssaati = 7;
+                            frmanaform.gun = "Wednesday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnwednesday7.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnthursday1_Click(object sender, EventArgs e)
+        {
+            if (btnthursday1.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Perşembe gününün 1. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday1dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday1sinifid;
+                            frmanaform.derssaati = 1;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday1dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday1sinifid;
+                            frmanaform.derssaati = 1;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnthursday1.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnthursday2_Click(object sender, EventArgs e)
+        {
+            if (btnthursday2.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Perşembe gününün 2. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday2dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday2sinifid;
+                            frmanaform.derssaati = 2;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday2dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday2sinifid;
+                            frmanaform.derssaati = 2;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnthursday2.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnthursday3_Click(object sender, EventArgs e)
+        {
+            if (btnthursday3.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Perşembe gününün 3. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday3dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday3sinifid;
+                            frmanaform.derssaati = 3;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday3dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday3sinifid;
+                            frmanaform.derssaati = 3;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnthursday3.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnthursday4_Click(object sender, EventArgs e)
+        {
+            if (btnthursday4.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Perşembe gününün 4. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday4dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday4sinifid;
+                            frmanaform.derssaati = 4;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday4dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday4sinifid;
+                            frmanaform.derssaati = 4;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnthursday4.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnthursday5_Click(object sender, EventArgs e)
+        {
+            if (btnthursday5.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Perşembe gününün 5. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday5dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday5sinifid;
+                            frmanaform.derssaati = 5;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday5dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday5sinifid;
+                            frmanaform.derssaati = 5;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnthursday5.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnthursday6_Click(object sender, EventArgs e)
+        {
+
+            if (btnthursday6.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Perşembe gününün 6. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday6dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday6sinifid;
+                            frmanaform.derssaati = 6;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday6dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday6sinifid;
+                            frmanaform.derssaati = 6;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnthursday6.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnthursday7_Click(object sender, EventArgs e)
+        {
+            if (btnthursday7.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Perşembe gününün 7. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday7dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday7sinifid;
+                            frmanaform.derssaati = 7;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = thursday7dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = thursday7sinifid;
+                            frmanaform.derssaati = 7;
+                            frmanaform.gun = "Thursday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnthursday7.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnfriday1_Click(object sender, EventArgs e)
+        {
+            if (btnfriday1.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Cuma gününün 1. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday1dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday1sinifid;
+                            frmanaform.derssaati = 1;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday1dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday1sinifid;
+                            frmanaform.derssaati = 1;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnfriday1.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnfriday2_Click(object sender, EventArgs e)
+        {
+            if (btnfriday2.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Cuma gününün 2. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday2dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday2sinifid;
+                            frmanaform.derssaati = 2;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday2dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday2sinifid;
+                            frmanaform.derssaati = 2;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnfriday2.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnfriday3_Click(object sender, EventArgs e)
+        {
+            if (btnfriday3.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Cuma gününün 3. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday3dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday3sinifid;
+                            frmanaform.derssaati = 3;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday3dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday3sinifid;
+                            frmanaform.derssaati = 3;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnfriday3.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnfriday4_Click(object sender, EventArgs e)
+        {
+            if (btnfriday4.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Cuma gününün 4. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday4dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday4sinifid;
+                            frmanaform.derssaati = 4;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday4dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday4sinifid;
+                            frmanaform.derssaati = 4;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnfriday4.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnfriday5_Click(object sender, EventArgs e)
+        {
+            if (btnfriday5.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Cuma gününün 5. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday5dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday5sinifid;
+                            frmanaform.derssaati = 5;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday5dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday5sinifid;
+                            frmanaform.derssaati = 5;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnfriday5.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnfriday6_Click(object sender, EventArgs e)
+        {
+            if (btnfriday6.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Cuma gününün 6. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday6dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday6sinifid;
+                            frmanaform.derssaati = 6;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday6dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday6sinifid;
+                            frmanaform.derssaati = 6;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnfriday6.BackColor == Color.Green)
+            {
+                MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnfriday7_Click(object sender, EventArgs e)
+        {
+            if (btnfriday7.BackColor == Color.Orange)
+            {
+                if (rdygunluk.Checked == true || rdyhaftalik.Checked == true)
+                {
+                    if (rdygunluk.Checked == true)
+                    {
+                        DialogResult result = MessageBox.Show("Cuma gününün 7. ders saatini puanlamak için puanlama sayfasına gidilecek? Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday7dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday7sinifid;
+                            frmanaform.derssaati = 7;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+
+                        }
+                    }
+                    else if (rdyhaftalik.Checked == true)
+                    {
+                        DialogResult resulthaftalik = MessageBox.Show("Seçilen sınıfın seçilen dersteki puanlanmamış bütün ders saatlerini puanlamak için puanlama sayfasına gidilecek. Onaylıyor musunuz?", "Soru", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resulthaftalik == DialogResult.Yes)
+                        {
+                            frmanaform frmanaform = new frmanaform();
+                            frmanaform.ogretmenid = ogretmenid;
+                            frmanaform.bransid = friday7dersid;
+                            frmanaform.rol = "ogretmen";
+                            frmanaform.tc = ogretmentc;
+                            frmanaform.sinif = friday7sinifid;
+                            frmanaform.derssaati = 7;
+                            frmanaform.gun = "Friday";
+                            if (rdygunluk.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 1;
+                            }
+                            else if (rdyhaftalik.Checked == true)
+                            {
+                                frmanaform.gunlukhaftalik = 0;
+                            }
+                            frmanaform.Show();
+                            this.Close();
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen puanlama şeklini seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if (btnfriday7.BackColor == Color.Green)
             {
                 MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

@@ -58,7 +58,7 @@
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -86,6 +86,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="frmanaform.cs">
       <SubType>Form</SubType>
@@ -122,6 +127,12 @@
     </Compile>
     <Compile Include="frmenler.Designer.cs">
       <DependentUpon>frmenler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmogretmendurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmogretmendurum.Designer.cs">
+      <DependentUpon>frmogretmendurum.cs</DependentUpon>
     </Compile>
     <Compile Include="frmpuankayitlari.cs">
       <SubType>Form</SubType>
@@ -169,6 +180,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PERFORMANSISTEMIDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PERFORMANSISTEMI_be_beDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PERFORMANSISTEMI_be_beDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -189,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmenler.resx">
       <DependentUpon>frmenler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmogretmendurum.resx">
+      <DependentUpon>frmogretmendurum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmpuankayitlari.resx">
       <DependentUpon>frmpuankayitlari.cs</DependentUpon>
@@ -219,6 +238,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="bin\Debug\Report2.rdlc" />
+    <EmbeddedResource Include="bin\Debug\Report1.rdlc" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -241,6 +261,17 @@
     <None Include="DataSet2.xss">
       <DependentUpon>DataSet2.xsd</DependentUpon>
     </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include=".xsc">
       <DependentUpon>.xsd</DependentUpon>
@@ -257,6 +288,17 @@
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>PERFORMANSISTEMIDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </None>
+    <None Include="PERFORMANSISTEMI_be_beDataSet.xsc">
+      <DependentUpon>PERFORMANSISTEMI_be_beDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PERFORMANSISTEMI_be_beDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PERFORMANSISTEMI_be_beDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PERFORMANSISTEMI_be_beDataSet.xss">
+      <DependentUpon>PERFORMANSISTEMI_be_beDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -329,10 +371,11 @@
     <Content Include="PERFORMANSISTEMI.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\icons8_hand_right_100px_1.png" />
     <Content Include="PERFORMANSISTEMI_be_be.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\icons8_hand_right_100px_1.png" />
+    <None Include="Resources\icons8_teacher_64px.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

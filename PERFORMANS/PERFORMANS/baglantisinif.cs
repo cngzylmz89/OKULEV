@@ -8,6 +8,6 @@ namespace PERFORMANS
 {
     public class baglantisinif
     {
-        public string baglan= System.IO.File.ReadAllText(@"C:\DATABASE2.txt");
+        public string baglan= System.IO.File.ReadAllText(@"C:\DATABASE.txt");
     }
 }

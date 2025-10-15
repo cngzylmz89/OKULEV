@@ -37,32 +37,32 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnpuanlanmamisdersrapor = new System.Windows.Forms.Button();
+            this.btnpuanlanmamisders = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblpuansizogretmensayi = new System.Windows.Forms.Label();
+            this.lblpuansizderssayi = new System.Windows.Forms.Label();
+            this.lblpuanogretmensayi = new System.Windows.Forms.Label();
+            this.lblpuanderssayi = new System.Windows.Forms.Label();
             this.pERFORMANSISTEMIDataSet3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.raporBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pERFORMANSISTEMIDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnpuanlanmamisogrt = new System.Windows.Forms.Button();
-            this.btnpuanlamamisogrtrapor = new System.Windows.Forms.Button();
-            this.btnpuanlanmamisdersrapor = new System.Windows.Forms.Button();
-            this.btnpuanlanmamisders = new System.Windows.Forms.Button();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.lblpuanderssayi = new System.Windows.Forms.Label();
-            this.lblpuansizderssayi = new System.Windows.Forms.Label();
-            this.lblpuanogretmensayi = new System.Windows.Forms.Label();
-            this.lblpuansizogretmensayi = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportViewerpuanlanmamisdersler = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.raporalnot = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.raporBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pERFORMANSISTEMIDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pERFORMANSISTEMIDataSet3BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.raporBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pERFORMANSISTEMIDataSet2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pERFORMANSISTEMIDataSet3BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.raporBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pERFORMANSISTEMIDataSet2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // raporBindingSource1
@@ -84,11 +84,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 12);
+            this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 38);
             this.button1.TabIndex = 1;
-            this.button1.Text = "RAPOR AL(BÜTÜN NOTLAR)";
+            this.button1.Text = "NOT DÖKÜMÜ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -97,6 +97,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.reportViewerpuanlanmamisdersler);
             this.groupBox1.Controls.Add(this.reportViewer2);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Location = new System.Drawing.Point(4, 114);
@@ -126,42 +127,6 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             // 
-            // btnpuanlanmamisogrt
-            // 
-            this.btnpuanlanmamisogrt.Location = new System.Drawing.Point(173, 9);
-            this.btnpuanlanmamisogrt.Name = "btnpuanlanmamisogrt";
-            this.btnpuanlanmamisogrt.Size = new System.Drawing.Size(201, 23);
-            this.btnpuanlanmamisogrt.TabIndex = 2;
-            this.btnpuanlanmamisogrt.Text = "PUANLAMAMIŞ ÖĞRETMENLER";
-            this.btnpuanlanmamisogrt.UseVisualStyleBackColor = true;
-            // 
-            // btnpuanlamamisogrtrapor
-            // 
-            this.btnpuanlamamisogrtrapor.Location = new System.Drawing.Point(228, 38);
-            this.btnpuanlamamisogrtrapor.Name = "btnpuanlamamisogrtrapor";
-            this.btnpuanlamamisogrtrapor.Size = new System.Drawing.Size(84, 23);
-            this.btnpuanlamamisogrtrapor.TabIndex = 3;
-            this.btnpuanlamamisogrtrapor.Text = "RAPOR AL";
-            this.btnpuanlamamisogrtrapor.UseVisualStyleBackColor = true;
-            // 
-            // btnpuanlanmamisdersrapor
-            // 
-            this.btnpuanlanmamisdersrapor.Location = new System.Drawing.Point(445, 38);
-            this.btnpuanlanmamisdersrapor.Name = "btnpuanlanmamisdersrapor";
-            this.btnpuanlanmamisdersrapor.Size = new System.Drawing.Size(84, 23);
-            this.btnpuanlanmamisdersrapor.TabIndex = 5;
-            this.btnpuanlanmamisdersrapor.Text = "RAPOR AL";
-            this.btnpuanlanmamisdersrapor.UseVisualStyleBackColor = true;
-            // 
-            // btnpuanlanmamisders
-            // 
-            this.btnpuanlanmamisders.Location = new System.Drawing.Point(389, 9);
-            this.btnpuanlanmamisders.Name = "btnpuanlanmamisders";
-            this.btnpuanlanmamisders.Size = new System.Drawing.Size(201, 23);
-            this.btnpuanlanmamisders.TabIndex = 4;
-            this.btnpuanlanmamisders.Text = "PUANLANMAMIŞ DERSLER";
-            this.btnpuanlanmamisders.UseVisualStyleBackColor = true;
-            // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -171,11 +136,10 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.raporalnot);
             this.splitContainer1.Panel1.Controls.Add(this.btnpuanlanmamisdersrapor);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.btnpuanlanmamisders);
-            this.splitContainer1.Panel1.Controls.Add(this.btnpuanlanmamisogrt);
-            this.splitContainer1.Panel1.Controls.Add(this.btnpuanlamamisogrtrapor);
             // 
             // splitContainer1.Panel2
             // 
@@ -184,41 +148,25 @@
             this.splitContainer1.SplitterDistance = 606;
             this.splitContainer1.TabIndex = 6;
             // 
-            // lblpuanderssayi
+            // btnpuanlanmamisdersrapor
             // 
-            this.lblpuanderssayi.AutoSize = true;
-            this.lblpuanderssayi.Location = new System.Drawing.Point(3, 0);
-            this.lblpuanderssayi.Name = "lblpuanderssayi";
-            this.lblpuanderssayi.Size = new System.Drawing.Size(146, 13);
-            this.lblpuanderssayi.TabIndex = 0;
-            this.lblpuanderssayi.Text = "PUANLANAN DERS SAYISI:";
+            this.btnpuanlanmamisdersrapor.Location = new System.Drawing.Point(331, 41);
+            this.btnpuanlanmamisdersrapor.Name = "btnpuanlanmamisdersrapor";
+            this.btnpuanlanmamisdersrapor.Size = new System.Drawing.Size(84, 23);
+            this.btnpuanlanmamisdersrapor.TabIndex = 5;
+            this.btnpuanlanmamisdersrapor.Text = "RAPOR AL";
+            this.btnpuanlanmamisdersrapor.UseVisualStyleBackColor = true;
+            this.btnpuanlanmamisdersrapor.Click += new System.EventHandler(this.btnpuanlanmamisdersrapor_Click);
             // 
-            // lblpuansizderssayi
+            // btnpuanlanmamisders
             // 
-            this.lblpuansizderssayi.AutoSize = true;
-            this.lblpuansizderssayi.Location = new System.Drawing.Point(3, 38);
-            this.lblpuansizderssayi.Name = "lblpuansizderssayi";
-            this.lblpuansizderssayi.Size = new System.Drawing.Size(169, 13);
-            this.lblpuansizderssayi.TabIndex = 1;
-            this.lblpuansizderssayi.Text = "PUANLANMAYAN DERS SAYISI:";
-            // 
-            // lblpuanogretmensayi
-            // 
-            this.lblpuanogretmensayi.AutoSize = true;
-            this.lblpuanogretmensayi.Location = new System.Drawing.Point(275, 0);
-            this.lblpuanogretmensayi.Name = "lblpuanogretmensayi";
-            this.lblpuanogretmensayi.Size = new System.Drawing.Size(177, 13);
-            this.lblpuanogretmensayi.TabIndex = 2;
-            this.lblpuanogretmensayi.Text = "PUANLAYAN ÖĞRETMEN SAYISI:";
-            // 
-            // lblpuansizogretmensayi
-            // 
-            this.lblpuansizogretmensayi.AutoSize = true;
-            this.lblpuansizogretmensayi.Location = new System.Drawing.Point(275, 38);
-            this.lblpuansizogretmensayi.Name = "lblpuansizogretmensayi";
-            this.lblpuansizogretmensayi.Size = new System.Drawing.Size(193, 13);
-            this.lblpuansizogretmensayi.TabIndex = 3;
-            this.lblpuansizogretmensayi.Text = "PUANLAMAYAN ÖĞRETMEN SAYISI:";
+            this.btnpuanlanmamisders.Location = new System.Drawing.Point(275, 12);
+            this.btnpuanlanmamisders.Name = "btnpuanlanmamisders";
+            this.btnpuanlanmamisders.Size = new System.Drawing.Size(201, 23);
+            this.btnpuanlanmamisders.TabIndex = 4;
+            this.btnpuanlanmamisders.Text = "PUANLANMAMIŞ DERSLER";
+            this.btnpuanlanmamisders.UseVisualStyleBackColor = true;
+            this.btnpuanlanmamisders.Click += new System.EventHandler(this.btnpuanlanmamisders_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -237,6 +185,61 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(545, 77);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
+            // lblpuansizogretmensayi
+            // 
+            this.lblpuansizogretmensayi.AutoSize = true;
+            this.lblpuansizogretmensayi.Location = new System.Drawing.Point(275, 38);
+            this.lblpuansizogretmensayi.Name = "lblpuansizogretmensayi";
+            this.lblpuansizogretmensayi.Size = new System.Drawing.Size(237, 26);
+            this.lblpuansizogretmensayi.TabIndex = 3;
+            this.lblpuansizogretmensayi.Text = "PUANLAMAYI TAMAMLAMAYAN ÖĞRETMEN SAYISI:";
+            // 
+            // lblpuansizderssayi
+            // 
+            this.lblpuansizderssayi.AutoSize = true;
+            this.lblpuansizderssayi.Location = new System.Drawing.Point(3, 38);
+            this.lblpuansizderssayi.Name = "lblpuansizderssayi";
+            this.lblpuansizderssayi.Size = new System.Drawing.Size(169, 13);
+            this.lblpuansizderssayi.TabIndex = 1;
+            this.lblpuansizderssayi.Text = "PUANLANMAYAN DERS SAYISI:";
+            // 
+            // lblpuanogretmensayi
+            // 
+            this.lblpuanogretmensayi.AutoSize = true;
+            this.lblpuanogretmensayi.Location = new System.Drawing.Point(275, 0);
+            this.lblpuanogretmensayi.Name = "lblpuanogretmensayi";
+            this.lblpuanogretmensayi.Size = new System.Drawing.Size(258, 13);
+            this.lblpuanogretmensayi.TabIndex = 2;
+            this.lblpuanogretmensayi.Text = "PUANLAMAYI TAMAMLAYAN ÖĞRETMEN SAYISI:";
+            // 
+            // lblpuanderssayi
+            // 
+            this.lblpuanderssayi.AutoSize = true;
+            this.lblpuanderssayi.Location = new System.Drawing.Point(3, 0);
+            this.lblpuanderssayi.Name = "lblpuanderssayi";
+            this.lblpuanderssayi.Size = new System.Drawing.Size(146, 13);
+            this.lblpuanderssayi.TabIndex = 0;
+            this.lblpuanderssayi.Text = "PUANLANAN DERS SAYISI:";
+            // 
+            // reportViewerpuanlanmamisdersler
+            // 
+            this.reportViewerpuanlanmamisdersler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewerpuanlanmamisdersler.Location = new System.Drawing.Point(3, 16);
+            this.reportViewerpuanlanmamisdersler.Name = "reportViewerpuanlanmamisdersler";
+            this.reportViewerpuanlanmamisdersler.ServerReport.BearerToken = null;
+            this.reportViewerpuanlanmamisdersler.Size = new System.Drawing.Size(1175, 379);
+            this.reportViewerpuanlanmamisdersler.TabIndex = 2;
+            // 
+            // raporalnot
+            // 
+            this.raporalnot.Location = new System.Drawing.Point(28, 47);
+            this.raporalnot.Name = "raporalnot";
+            this.raporalnot.Size = new System.Drawing.Size(84, 23);
+            this.raporalnot.TabIndex = 6;
+            this.raporalnot.Text = "RAPOR AL";
+            this.raporalnot.UseVisualStyleBackColor = true;
+            this.raporalnot.Click += new System.EventHandler(this.raporalnot_Click);
+            // 
             // frmpuankayitlari
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,15 +257,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pERFORMANSISTEMIDataSet3BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.raporBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pERFORMANSISTEMIDataSet2BindingSource)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pERFORMANSISTEMIDataSet3BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.raporBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pERFORMANSISTEMIDataSet2BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -291,8 +294,6 @@
       //  private PERFORMANSISTEMIDataSet4 pERFORMANSISTEMIDataSet4;
         //private System.Windows.Forms.BindingSource raporBindingSource4;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
-        private System.Windows.Forms.Button btnpuanlamamisogrtrapor;
-        private System.Windows.Forms.Button btnpuanlanmamisogrt;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button btnpuanlanmamisdersrapor;
         private System.Windows.Forms.Button btnpuanlanmamisders;
@@ -301,6 +302,8 @@
         private System.Windows.Forms.Label lblpuanogretmensayi;
         private System.Windows.Forms.Label lblpuansizderssayi;
         private System.Windows.Forms.Label lblpuanderssayi;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewerpuanlanmamisdersler;
+        private System.Windows.Forms.Button raporalnot;
         // private PERFORMANSISTEMIDataSet4TableAdapters.raporTableAdapter raporTableAdapter1;
         // private PERFORMANSISTEMIDataSet6TableAdapters.raporTableAdapter raporTableAdapter1;
     }
