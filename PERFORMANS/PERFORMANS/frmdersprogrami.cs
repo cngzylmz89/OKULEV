@@ -4081,5 +4081,7 @@ namespace PERFORMANS
                 MessageBox.Show("Bu ders zaten puanlanmış.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+       
     }
 }

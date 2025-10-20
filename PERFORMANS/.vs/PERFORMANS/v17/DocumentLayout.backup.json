@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\performans\\frmogretmendurum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|c:\\users\\pc\\desktop\\ceng\u0130z\\okulev\\performans\\performans\\frmogretmendurum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|solutionrelative:performans\\frmogretmendurum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|c:\\users\\pc\\desktop\\ceng\u0130z\\okulev\\performans\\performans\\baglantisinif.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|solutionrelative:performans\\baglantisinif.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\performans\\frmdersprogrami.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|solutionrelative:performans\\frmdersprogrami.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\performans\\frmdersprogrami.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|solutionrelative:performans\\frmdersprogrami.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\performans\\frmogretmendurum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|solutionrelative:performans\\frmogretmendurum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\performans\\frmyoneticinanaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|solutionrelative:performans\\frmyoneticinanaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\performans\\frmdersprogrami.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|solutionrelative:performans\\frmdersprogrami.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\performans\\frmyoneticinanaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|solutionrelative:performans\\frmyoneticinanaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\performans\\baglantisinif.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83D098E2-36DC-4B8B-993C-211E5E4AF97F}|PERFORMANS\\PERFORMANS.csproj|solutionrelative:performans\\baglantisinif.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "frmogretmendurum.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmogretmendurum.cs",
+              "RelativeDocumentMoniker": "PERFORMANS\\frmogretmendurum.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmogretmendurum.cs",
+              "RelativeToolTip": "PERFORMANS\\frmogretmendurum.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwHsAAACdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T09:29:31.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "baglantisinif.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\baglantisinif.cs",
               "RelativeDocumentMoniker": "PERFORMANS\\baglantisinif.cs",
@@ -70,79 +71,30 @@
               "RelativeToolTip": "PERFORMANS\\baglantisinif.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:37:42.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T10:37:42.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmogretmendurum.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmogretmendurum.cs",
+              "RelativeDocumentMoniker": "PERFORMANS\\frmogretmendurum.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmogretmendurum.cs [Design]",
+              "RelativeToolTip": "PERFORMANS\\frmogretmendurum.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T09:29:03.336Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmdersprogrami.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmdersprogrami.cs",
-              "RelativeDocumentMoniker": "PERFORMANS\\frmdersprogrami.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmdersprogrami.cs [Design]",
-              "RelativeToolTip": "PERFORMANS\\frmdersprogrami.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:04:41.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "frmdersprogrami.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmdersprogrami.cs",
               "RelativeDocumentMoniker": "PERFORMANS\\frmdersprogrami.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmdersprogrami.cs",
               "RelativeToolTip": "PERFORMANS\\frmdersprogrami.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAAALgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAALMAAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:04:45.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmyoneticinanaform.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmyoneticinanaform.cs",
-              "RelativeDocumentMoniker": "PERFORMANS\\frmyoneticinanaform.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmyoneticinanaform.cs",
-              "RelativeToolTip": "PERFORMANS\\frmyoneticinanaform.cs",
-              "ViewState": "AgIAABoCAAAAAAAAAAAawCwCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T09:55:11.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmogretmendurum.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmogretmendurum.cs",
-              "RelativeDocumentMoniker": "PERFORMANS\\frmogretmendurum.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmogretmendurum.cs*",
-              "RelativeToolTip": "PERFORMANS\\frmogretmendurum.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwBkAAAAqAQAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T09:29:31.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmogretmendurum.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmogretmendurum.cs",
-              "RelativeDocumentMoniker": "PERFORMANS\\frmogretmendurum.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmogretmendurum.cs [Design]*",
-              "RelativeToolTip": "PERFORMANS\\frmogretmendurum.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T09:29:03.336Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmyoneticinanaform.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmyoneticinanaform.cs",
-              "RelativeDocumentMoniker": "PERFORMANS\\frmyoneticinanaform.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\CENG\u0130Z\\OKULEV\\PERFORMANS\\PERFORMANS\\frmyoneticinanaform.cs [Design]",
-              "RelativeToolTip": "PERFORMANS\\frmyoneticinanaform.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T09:25:57.216Z"
+              "WhenOpened": "2025-10-17T09:08:07.333Z"
             }
           ]
         }

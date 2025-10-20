@@ -23,11 +23,19 @@ namespace PERFORMANS
         {
             OleDbConnection con = new OleDbConnection(conn.baglan);
             con.Open();
-            OleDbCommand komutogretmendurum = new OleDbCommand("select DISTINCT ADISOYADI, count(OGRETMEN) AS 'PUANLANMIŞ DERS SAYISI' FROM TBLDERSPROGRAMI INNER JOIN TBLOGRETMENLER ON TBLOGRETMENLER.OGRETMENID=TBLDERSPROGRAMI.OGRETMEN WHERE OLCDURUM=1  GROUP BY ADISOYADI ORDER BY count(OGRETMEN) DESC", con);
+            OleDbCommand komutogretmendurum = new OleDbCommand("select ADISOYADI, count(*) AS 'PUANLANAN DERS SAYISI' FROM TBLDERSPROGRAMI INNER JOIN TBLOGRETMENLER ON TBLDERSPROGRAMI.OGRETMEN=TBLOGRETMENLER.OGRETMENID WHERE OLCDURUM<>false GROUP BY ADISOYADI ORDER BY COUNT(*) DESC", con);
             OleDbDataAdapter da=new OleDbDataAdapter(komutogretmendurum);
             DataTable dt=new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
+            con.Close();
+
+            con.Open();
+            OleDbCommand komutogretmendurum2 = new OleDbCommand("SELECT  DISTINCT ADISOYADI AS'PUANLAMA YAPMAYAN ÖĞRETMEN LİSTESİ', '0' AS 'PUANLANAN DERS SAYISI' FROM TBLDERSPROGRAMI INNER JOIN TBLOGRETMENLER ON TBLOGRETMENLER.OGRETMENID=TBLDERSPROGRAMI.OGRETMEN WHERE OGRETMEN NOT IN(SELECT OGRETMEN FROM TBLDERSPROGRAMI WHERE OLCDURUM<>false )", con);
+            OleDbDataAdapter da2 = new OleDbDataAdapter(komutogretmendurum2);
+            DataTable dt2 = new DataTable();
+            da2.Fill(dt2);
+            dataGridView2.DataSource = dt2;
             con.Close();
         }
         int ogretmenid;
@@ -48,29 +56,74 @@ namespace PERFORMANS
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             OleDbConnection con = new OleDbConnection(conn.baglan);
-            con.Open();
-            OleDbCommand komutogretmentcoku=new OleDbCommand("select OGRETMENID from TBLOGRETMENLER where ADISOYADI='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'", con);
-            OleDbDataReader dr = komutogretmentcoku.ExecuteReader();
-            if (dr.Read())
+            try
             {
-                 ogretmenid= int.Parse(dr["OGRETMENID"].ToString());
+                con.Open();
+                OleDbCommand komutogretmentcoku = new OleDbCommand("select OGRETMENID from TBLOGRETMENLER where ADISOYADI='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'", con);
+                OleDbDataReader dr = komutogretmentcoku.ExecuteReader();
+                if (dr.Read())
+                {
+                    ogretmenid = int.Parse(dr["OGRETMENID"].ToString());
+                }
+                con.Close();
+                con.Open();
+                OleDbCommand ogretmentcbul = new OleDbCommand("select TCKIMLIKNO FROM TBLOGRETMENLER where OGRETMENID=" + ogretmenid + "", con);
+                OleDbDataReader dr2 = ogretmentcbul.ExecuteReader();
+                if (dr2.Read())
+                {
+                    ogretmenintc = dr2[0].ToString();
+
+                }
+                frmdersprogrami drp = new frmdersprogrami();
+                drp.ogretmentc = sifrecoz(ogretmenintc);
+                drp.rolum = "yonetici";
+                drp.Show();
+
             }
-            con.Close();
-            con.Open();
-            OleDbCommand ogretmentcbul=new OleDbCommand("select TCKIMLIKNO FROM TBLOGRETMENLER where OGRETMENID="+ogretmenid+"",con);
-            OleDbDataReader dr2 = ogretmentcbul.ExecuteReader();
-            if (dr2.Read())
+            catch (Exception hata)
             {
-                ogretmenintc = dr2[0].ToString();
+
+                MessageBox.Show("Hata oluştu. Lütfen program sağlayıcınıza başvurunuz." + hata.Message, "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+
+
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            OleDbConnection con = new OleDbConnection(conn.baglan);
+            try
+            {
+                con.Open();
+                OleDbCommand komutogretmentcoku = new OleDbCommand("select OGRETMENID from TBLOGRETMENLER where ADISOYADI='" + dataGridView2.CurrentRow.Cells[0].Value.ToString() + "'", con);
+                OleDbDataReader dr = komutogretmentcoku.ExecuteReader();
+                if (dr.Read())
+                {
+                    ogretmenid = int.Parse(dr["OGRETMENID"].ToString());
+                }
+                con.Close();
+                con.Open();
+                OleDbCommand ogretmentcbul = new OleDbCommand("select TCKIMLIKNO FROM TBLOGRETMENLER where OGRETMENID=" + ogretmenid + "", con);
+                OleDbDataReader dr2 = ogretmentcbul.ExecuteReader();
+                if (dr2.Read())
+                {
+                    ogretmenintc = dr2[0].ToString();
+
+                }
+                frmdersprogrami drp = new frmdersprogrami();
+                drp.ogretmentc = sifrecoz(ogretmenintc);
+                drp.rolum = "yonetici";
+                drp.Show();
 
             }
-            frmdersprogrami drp = new frmdersprogrami();
-            drp.ogretmentc = sifrecoz(ogretmenintc);
-            drp.rolum = "yonetici";
-            drp.Show();
+            catch (Exception hata)
+            {
 
 
-
+                MessageBox.Show("Hata oluştu. Lütfen program sağlayıcınıza başvurunuz." + hata.Message, "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }
