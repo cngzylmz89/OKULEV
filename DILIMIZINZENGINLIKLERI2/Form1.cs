@@ -43,8 +43,8 @@ namespace DILIMIZINZENGINLIKLERI
           
         }
 
-        
 
+        
         private void CheckTimer_Tick(object sender, EventArgs e)
         {
             IntPtr fg = GetForegroundWindow();
@@ -87,9 +87,7 @@ namespace DILIMIZINZENGINLIKLERI
                     deyimcumle= dr[6].ToString() + "\n";
                    atasozu = dr[7].ToString() + "\n";
                     atasozuyazar= dr[8].ToString() + "\n";
-                   
-
-
+             
                 }
                 else if (sayi == 1)
                 {  
@@ -112,7 +110,8 @@ namespace DILIMIZINZENGINLIKLERI
                     deyimcumle = dr[6].ToString() + "\n";
                     atasozu = dr[7].ToString() + "\n";
                     atasozuyazar = dr[8].ToString() + "\n";
-                    
+                 
+
                 }
 
             }
@@ -134,16 +133,7 @@ namespace DILIMIZINZENGINLIKLERI
         }
 
 
-        void muzikcal()
-        {
-            if(sayi==0&&lblatasozuyazar.Text=="Orhan Gencebay")
-            {
-
-                orhan.Play();
-            }
-           
-            
-        }
+       
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -469,7 +459,7 @@ namespace DILIMIZINZENGINLIKLERI
             }
             else
             {
-                muzikcal();
+               
                 tmryazar.Stop();
                 index = 0;
                 timer = "bitti";
