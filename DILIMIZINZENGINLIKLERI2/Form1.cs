@@ -31,6 +31,7 @@ namespace DILIMIZINZENGINLIKLERI
         string sozcuk, sozcukanlam, sozcukcumle, deyim, deyimanlam, deyimcumle, atasozu, atasozuyazar;
         string timer;
         
+        
        
         public Form1()
         {
@@ -59,8 +60,10 @@ namespace DILIMIZINZENGINLIKLERI
         int sayi;
         int saniye = 300;
         SoundPlayer daktilo = new SoundPlayer(Application.StartupPath + @"\ses.wav");
+        SoundPlayer orhan = new SoundPlayer(Application.StartupPath + @"\ses2.wav");
         private void Form1_Load(object sender, EventArgs e)
         {
+
            
             timer = "sozcuk";
             label1.Text = DateTime.Now.ToString("dd.MM.yyyy");
@@ -85,7 +88,8 @@ namespace DILIMIZINZENGINLIKLERI
                    atasozu = dr[7].ToString() + "\n";
                     atasozuyazar= dr[8].ToString() + "\n";
                    
-                    
+
+
                 }
                 else if (sayi == 1)
                 {  
@@ -108,6 +112,7 @@ namespace DILIMIZINZENGINLIKLERI
                     deyimcumle = dr[6].ToString() + "\n";
                     atasozu = dr[7].ToString() + "\n";
                     atasozuyazar = dr[8].ToString() + "\n";
+                    
                 }
 
             }
@@ -128,7 +133,17 @@ namespace DILIMIZINZENGINLIKLERI
             Application.Exit();
         }
 
-       
+
+        void muzikcal()
+        {
+            if(sayi==0&&lblatasozuyazar.Text=="Orhan Gencebay")
+            {
+
+                orhan.Play();
+            }
+           
+            
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -274,18 +289,25 @@ namespace DILIMIZINZENGINLIKLERI
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-
+            int indexsozcuk = lblsozcuk.Text.IndexOf(sozcuk);
             if (index < sozcuk.Length)
             {
                 lblsozcuk.Text += sozcuk[index];
-               
+
+
+
+                if (sayi == 0)
+                {
                     daktilo.Play();
+                }
+               
                 
                 index++;
             }
             else
             {
                 timer2.Stop();
+              
                 index = 0;
                 timer = "sozcukanlam";
                 tmrsozcukanlam.Start();
@@ -298,8 +320,11 @@ namespace DILIMIZINZENGINLIKLERI
         {
             if (index < sozcukanlam.Length)
             {
-                lblsozcukanlam.Text += sozcukanlam[index];
-                daktilo.Play();
+               lblsozcukanlam.Text += sozcukanlam[index];
+                if (sayi == 0)
+                {
+                    daktilo.Play();
+                }
                 index++;
             }
             else
@@ -317,9 +342,12 @@ namespace DILIMIZINZENGINLIKLERI
             if (index < sozcukcumle.Length)
             {
                 lblsozcukcumle.Text += sozcukcumle[index];
-                
+
+                if (sayi == 0)
+                {
                     daktilo.Play();
-                
+                }
+
                 index++;
             }
             else
@@ -338,9 +366,12 @@ namespace DILIMIZINZENGINLIKLERI
             if (index < deyim.Length)
             {
                 lbldeyim.Text += deyim[index];
-                
+
+                if (sayi == 0)
+                {
                     daktilo.Play();
-                
+                }
+
                 index++;
             }
             else
@@ -358,9 +389,12 @@ namespace DILIMIZINZENGINLIKLERI
             if (index < deyimanlam.Length)
             {
                 lbldeyimanlam.Text += deyimanlam[index];
-                
+
+                if (sayi == 0)
+                {
                     daktilo.Play();
-              
+                }
+
                 index++;
             }
             else
@@ -378,9 +412,12 @@ namespace DILIMIZINZENGINLIKLERI
             if (index < deyimcumle.Length)
             {
                 lbldeyimcumle.Text += deyimcumle[index];
-              
+
+                if (sayi == 0)
+                {
                     daktilo.Play();
-                
+                }
+
                 index++;
             }
             else
@@ -398,9 +435,12 @@ namespace DILIMIZINZENGINLIKLERI
             if (index < atasozu.Length)
             {
                 lblatasozsoz.Text += atasozu[index];
-                
+
+                if (sayi == 0)
+                {
                     daktilo.Play();
-              
+                }
+
                 index++;
             }
             else
@@ -418,21 +458,28 @@ namespace DILIMIZINZENGINLIKLERI
         {
             if (index < atasozuyazar.Length)
             {
-                lblatasozuyazar.Text += atasozuyazar[index];
-               
+                lblatasozuyazar.Text+= atasozuyazar[index];
+
+                if (sayi == 0 ) ;
+                {
                     daktilo.Play();
-              
+                }
+
                 index++;
             }
             else
             {
+                muzikcal();
                 tmryazar.Stop();
                 index = 0;
                 timer = "bitti";
-                if (sayi == 1&&timer=="bitti")
+
+               
+;                if (sayi == 1&&timer=="bitti")
                 {
                     Application.Exit();
                 }
+               
 
 
             }

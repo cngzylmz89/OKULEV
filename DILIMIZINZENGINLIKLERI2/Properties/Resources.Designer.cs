@@ -93,6 +93,16 @@ namespace DILIMIZINZENGINLIKLERI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_13473569_stock_illustration_notebook_paper_background {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_13473569-stock-illustration-notebook-paper-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dil {
             get {
                 object obj = ResourceManager.GetObject("dil", resourceCulture);
@@ -136,6 +146,36 @@ namespace DILIMIZINZENGINLIKLERI.Properties {
         internal static System.Drawing.Bitmap Group_1 {
             get {
                 object obj = ResourceManager.GetObject("Group 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paper_texture {
+            get {
+                object obj = ResourceManager.GetObject("paper-texture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paper_texture1 {
+            get {
+                object obj = ResourceManager.GetObject("paper-texture1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_white_rectangle_paper_background_white_rectangle_paper {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-white-rectangle-paper-background-white-rectangle-paper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

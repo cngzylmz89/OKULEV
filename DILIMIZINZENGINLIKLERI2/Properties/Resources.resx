@@ -127,8 +127,17 @@
   <data name="temel-yaklasim_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\temel-yaklasim_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="depositphotos_13473569-stock-illustration-notebook-paper-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\depositphotos_13473569-stock-illustration-notebook-paper-background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dil1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dil1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-transparent-white-rectangle-paper-background-white-rectangle-paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-transparent-white-rectangle-paper-background-white-rectangle-paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bye-smile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bye-smile.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bayrak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bayrak.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,13 +145,16 @@
   <data name="dil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="paper-texture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper-texture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dilimizin zenginlikleri" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dilimizin zenginlikleri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bye-smile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bye-smile.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paper-texture1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper-texture1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
