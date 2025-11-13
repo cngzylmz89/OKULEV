@@ -37,22 +37,22 @@
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbldeyimcumle = new System.Windows.Forms.Label();
-            this.lbldeyimanlam = new System.Windows.Forms.Label();
+            this.lbldeyimcumle = new System.Windows.Forms.RichTextBox();
+            this.lbldeyimanlam = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblsozcuk = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblsozcuk = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lbldeyim = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblsozcukcumle = new System.Windows.Forms.Label();
-            this.lblsozcukanlam = new System.Windows.Forms.Label();
+            this.lblsozcukcumle = new System.Windows.Forms.RichTextBox();
+            this.lblsozcukanlam = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblatasozuyazar = new System.Windows.Forms.Label();
-            this.lblatasozsoz = new System.Windows.Forms.Label();
+            this.lblatasozuyazar = new System.Windows.Forms.RichTextBox();
+            this.lblatasozsoz = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -68,6 +68,7 @@
             this.tmrdeyimcumle = new System.Windows.Forms.Timer(this.components);
             this.tmratasozu = new System.Windows.Forms.Timer(this.components);
             this.tmryazar = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -92,6 +93,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -115,7 +117,7 @@
             this.splitContainer1.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer3);
             this.splitContainer1.Size = new System.Drawing.Size(1329, 596);
-            this.splitContainer1.SplitterDistance = 141;
+            this.splitContainer1.SplitterDistance = 200;
             this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
@@ -135,7 +137,7 @@
             // 
             this.splitContainer2.Panel2.BackgroundImage = global::DILIMIZINZENGINLIKLERI.Properties.Resources.Group_1;
             this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.splitContainer2.Size = new System.Drawing.Size(1329, 141);
+            this.splitContainer2.Size = new System.Drawing.Size(1329, 200);
             this.splitContainer2.SplitterDistance = 172;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -152,7 +154,7 @@
             this.tableLayoutPanel9.RowCount = 2;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(172, 141);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(172, 200);
             this.tableLayoutPanel9.TabIndex = 0;
             // 
             // pictureBox1
@@ -162,7 +164,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(3, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 66);
+            this.pictureBox1.Size = new System.Drawing.Size(166, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -171,10 +173,10 @@
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::DILIMIZINZENGINLIKLERI.Properties.Resources.temel_yaklasim_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 72);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 102);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(166, 67);
+            this.pictureBox2.Size = new System.Drawing.Size(166, 96);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -196,8 +198,8 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer3.Size = new System.Drawing.Size(1329, 451);
-            this.splitContainer3.SplitterDistance = 410;
+            this.splitContainer3.Size = new System.Drawing.Size(1329, 392);
+            this.splitContainer3.SplitterDistance = 351;
             this.splitContainer3.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -219,7 +221,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1329, 410);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1329, 351);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel7
@@ -229,49 +231,45 @@
             this.tableLayoutPanel7.Controls.Add(this.lbldeyimcumle, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.lbldeyimanlam, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(250, 136);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(250, 117);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1079, 136);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1079, 117);
             this.tableLayoutPanel7.TabIndex = 5;
             // 
             // lbldeyimcumle
             // 
-            this.lbldeyimcumle.AutoSize = true;
+            this.lbldeyimcumle.BackColor = System.Drawing.Color.Yellow;
             this.lbldeyimcumle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbldeyimcumle.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbldeyimcumle.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbldeyimcumle.Location = new System.Drawing.Point(4, 68);
-            this.lbldeyimcumle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbldeyimcumle.Location = new System.Drawing.Point(3, 61);
             this.lbldeyimcumle.Name = "lbldeyimcumle";
-            this.lbldeyimcumle.Size = new System.Drawing.Size(1071, 68);
-            this.lbldeyimcumle.TabIndex = 4;
-            this.lbldeyimcumle.Text = "Cümlem:";
-            this.lbldeyimcumle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbldeyimcumle.ReadOnly = true;
+            this.lbldeyimcumle.Size = new System.Drawing.Size(1073, 53);
+            this.lbldeyimcumle.TabIndex = 6;
+            this.lbldeyimcumle.Text = "Cümle:";
             // 
             // lbldeyimanlam
             // 
-            this.lbldeyimanlam.AutoSize = true;
+            this.lbldeyimanlam.BackColor = System.Drawing.Color.Yellow;
             this.lbldeyimanlam.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbldeyimanlam.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbldeyimanlam.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbldeyimanlam.Location = new System.Drawing.Point(4, 0);
-            this.lbldeyimanlam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbldeyimanlam.Location = new System.Drawing.Point(3, 3);
             this.lbldeyimanlam.Name = "lbldeyimanlam";
-            this.lbldeyimanlam.Size = new System.Drawing.Size(1071, 68);
-            this.lbldeyimanlam.TabIndex = 3;
+            this.lbldeyimanlam.ReadOnly = true;
+            this.lbldeyimanlam.Size = new System.Drawing.Size(1073, 52);
+            this.lbldeyimanlam.TabIndex = 5;
             this.lbldeyimanlam.Text = "Anlamı:";
-            this.lbldeyimanlam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.lblsozcuk, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lblsozcuk, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -280,21 +278,8 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(250, 136);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(250, 117);
             this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // lblsozcuk
-            // 
-            this.lblsozcuk.AutoSize = true;
-            this.lblsozcuk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblsozcuk.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblsozcuk.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblsozcuk.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lblsozcuk.Location = new System.Drawing.Point(3, 68);
-            this.lblsozcuk.Name = "lblsozcuk";
-            this.lblsozcuk.Size = new System.Drawing.Size(244, 68);
-            this.lblsozcuk.TabIndex = 1;
-            this.lblsozcuk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -305,10 +290,23 @@
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(244, 68);
+            this.label2.Size = new System.Drawing.Size(244, 58);
             this.label2.TabIndex = 0;
             this.label2.Text = "GÜNÜN SÖZCÜĞÜ:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblsozcuk
+            // 
+            this.lblsozcuk.AutoSize = true;
+            this.lblsozcuk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lblsozcuk.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblsozcuk.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblsozcuk.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblsozcuk.Location = new System.Drawing.Point(3, 58);
+            this.lblsozcuk.Name = "lblsozcuk";
+            this.lblsozcuk.Size = new System.Drawing.Size(244, 59);
+            this.lblsozcuk.TabIndex = 1;
+            this.lblsozcuk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel4
             // 
@@ -317,25 +315,25 @@
             this.tableLayoutPanel4.Controls.Add(this.lbldeyim, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 136);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 117);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(250, 136);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(250, 117);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // lbldeyim
             // 
             this.lbldeyim.AutoSize = true;
-            this.lbldeyim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbldeyim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lbldeyim.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbldeyim.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbldeyim.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lbldeyim.Location = new System.Drawing.Point(3, 68);
+            this.lbldeyim.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbldeyim.Location = new System.Drawing.Point(3, 58);
             this.lbldeyim.Name = "lbldeyim";
-            this.lbldeyim.Size = new System.Drawing.Size(244, 68);
+            this.lbldeyim.Size = new System.Drawing.Size(244, 59);
             this.lbldeyim.TabIndex = 3;
             this.lbldeyim.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -348,7 +346,7 @@
             this.label4.ForeColor = System.Drawing.Color.OrangeRed;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(244, 68);
+            this.label4.Size = new System.Drawing.Size(244, 58);
             this.label4.TabIndex = 2;
             this.label4.Text = "GÜNÜN DEYİMİ:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -359,13 +357,13 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 272);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 234);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(250, 138);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(250, 117);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // label6
@@ -377,7 +375,7 @@
             this.label6.ForeColor = System.Drawing.Color.OrangeRed;
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(244, 138);
+            this.label6.Size = new System.Drawing.Size(244, 117);
             this.label6.TabIndex = 2;
             this.label6.Text = "GÜNÜN SÖZÜ, ATASÖZÜ:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -387,7 +385,7 @@
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Controls.Add(this.lblsozcukcumle, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.lblsozcukanlam, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(250, 0);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
@@ -396,36 +394,32 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1079, 136);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1079, 117);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
             // lblsozcukcumle
             // 
-            this.lblsozcukcumle.AutoSize = true;
+            this.lblsozcukcumle.BackColor = System.Drawing.Color.Yellow;
             this.lblsozcukcumle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblsozcukcumle.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblsozcukcumle.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblsozcukcumle.Location = new System.Drawing.Point(4, 68);
-            this.lblsozcukcumle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblsozcukcumle.Location = new System.Drawing.Point(3, 61);
             this.lblsozcukcumle.Name = "lblsozcukcumle";
-            this.lblsozcukcumle.Size = new System.Drawing.Size(1071, 68);
-            this.lblsozcukcumle.TabIndex = 4;
-            this.lblsozcukcumle.Text = "Cümlem:";
-            this.lblsozcukcumle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblsozcukcumle.ReadOnly = true;
+            this.lblsozcukcumle.Size = new System.Drawing.Size(1073, 53);
+            this.lblsozcukcumle.TabIndex = 6;
+            this.lblsozcukcumle.Text = "Cümle:";
             // 
             // lblsozcukanlam
             // 
-            this.lblsozcukanlam.AutoSize = true;
+            this.lblsozcukanlam.BackColor = System.Drawing.Color.Yellow;
             this.lblsozcukanlam.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblsozcukanlam.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblsozcukanlam.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblsozcukanlam.Location = new System.Drawing.Point(4, 0);
-            this.lblsozcukanlam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblsozcukanlam.Location = new System.Drawing.Point(0, 0);
             this.lblsozcukanlam.Name = "lblsozcukanlam";
-            this.lblsozcukanlam.Size = new System.Drawing.Size(1071, 68);
-            this.lblsozcukanlam.TabIndex = 3;
+            this.lblsozcukanlam.ReadOnly = true;
+            this.lblsozcukanlam.Size = new System.Drawing.Size(1079, 58);
+            this.lblsozcukanlam.TabIndex = 5;
             this.lblsozcukanlam.Text = "Anlamı:";
-            this.lblsozcukanlam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel8
             // 
@@ -436,40 +430,38 @@
             this.tableLayoutPanel8.Controls.Add(this.lblatasozsoz, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Font = new System.Drawing.Font("Georgia", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(250, 272);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(250, 234);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1079, 138);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1079, 117);
             this.tableLayoutPanel8.TabIndex = 6;
             // 
             // lblatasozuyazar
             // 
-            this.lblatasozuyazar.AutoSize = true;
+            this.lblatasozuyazar.BackColor = System.Drawing.Color.Yellow;
             this.lblatasozuyazar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblatasozuyazar.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblatasozuyazar.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblatasozuyazar.Location = new System.Drawing.Point(4, 69);
-            this.lblatasozuyazar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblatasozuyazar.Location = new System.Drawing.Point(3, 61);
             this.lblatasozuyazar.Name = "lblatasozuyazar";
-            this.lblatasozuyazar.Size = new System.Drawing.Size(1071, 69);
-            this.lblatasozuyazar.TabIndex = 7;
-            this.lblatasozuyazar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblatasozuyazar.ReadOnly = true;
+            this.lblatasozuyazar.Size = new System.Drawing.Size(1073, 53);
+            this.lblatasozuyazar.TabIndex = 9;
+            this.lblatasozuyazar.Text = "";
             // 
             // lblatasozsoz
             // 
-            this.lblatasozsoz.AutoSize = true;
+            this.lblatasozsoz.BackColor = System.Drawing.Color.Yellow;
             this.lblatasozsoz.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblatasozsoz.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblatasozsoz.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblatasozsoz.Location = new System.Drawing.Point(4, 0);
-            this.lblatasozsoz.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblatasozsoz.Location = new System.Drawing.Point(3, 3);
             this.lblatasozsoz.Name = "lblatasozsoz";
-            this.lblatasozsoz.Size = new System.Drawing.Size(1071, 69);
-            this.lblatasozsoz.TabIndex = 6;
-            this.lblatasozsoz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblatasozsoz.ReadOnly = true;
+            this.lblatasozsoz.Size = new System.Drawing.Size(1073, 52);
+            this.lblatasozsoz.TabIndex = 8;
+            this.lblatasozsoz.Text = "";
             // 
             // tableLayoutPanel1
             // 
@@ -595,6 +587,16 @@
             this.tmryazar.Interval = 250;
             this.tmryazar.Tick += new System.EventHandler(this.tmryazar_Tick);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lblsozcukanlam);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1079, 58);
+            this.panel2.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -608,7 +610,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -625,7 +627,6 @@
             this.splitContainer3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -633,14 +634,13 @@
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -658,17 +658,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label lbldeyim;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label lblatasozsoz;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Label lbldeyimcumle;
-        private System.Windows.Forms.Label lbldeyimanlam;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Label lblatasozuyazar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Timer timer1;
@@ -683,9 +678,15 @@
         private System.Windows.Forms.Timer tmrdeyimcumle;
         private System.Windows.Forms.Timer tmratasozu;
         private System.Windows.Forms.Timer tmryazar;
+        private System.Windows.Forms.RichTextBox lbldeyimcumle;
+        private System.Windows.Forms.RichTextBox lbldeyimanlam;
+        private System.Windows.Forms.RichTextBox lblsozcukcumle;
+        private System.Windows.Forms.RichTextBox lblsozcukanlam;
+        private System.Windows.Forms.RichTextBox lblatasozuyazar;
+        private System.Windows.Forms.RichTextBox lblatasozsoz;
         private System.Windows.Forms.Label lblsozcuk;
-        private System.Windows.Forms.Label lblsozcukcumle;
-        private System.Windows.Forms.Label lblsozcukanlam;
+        private System.Windows.Forms.Label lbldeyim;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,11 +9,11 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Media;
 
 
 namespace DILIMIZINZENGINLIKLERI
@@ -37,14 +38,36 @@ namespace DILIMIZINZENGINLIKLERI
         {
 
             InitializeComponent();
-
+            AddToStartup();
             checkTimer.Interval = 300; // 0.3 saniyede bir kontrol et
             checkTimer.Tick += CheckTimer_Tick;
           
         }
 
+        private void AddToStartup()
+        {
+            try
+            {
+                string appName = "Dilimizinzenginlikleri"; // Başlangıçta görünecek ad
+                string exePath = Application.ExecutablePath;
 
-        
+                RegistryKey key = Registry.CurrentUser.OpenSubKey(
+                    @"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
+
+                // Zaten ekli değilse ekle
+                if (key.GetValue(appName) == null)
+                {
+                    key.SetValue(appName, exePath);
+                   
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
+            }
+        }
+
         private void CheckTimer_Tick(object sender, EventArgs e)
         {
             IntPtr fg = GetForegroundWindow();
@@ -60,13 +83,17 @@ namespace DILIMIZINZENGINLIKLERI
         int sayi;
         int saniye = 300;
         SoundPlayer daktilo = new SoundPlayer(Application.StartupPath + @"\ses.wav");
-        SoundPlayer orhan = new SoundPlayer(Application.StartupPath + @"\ses2.wav");
-        private void Form1_Load(object sender, EventArgs e)
+        async Task getir()
         {
-
-           
-            timer = "sozcuk";
+            this.SuspendLayout();
+            
+            this.ResumeLayout();
+            this.WindowState = FormWindowState.Maximized;
             label1.Text = DateTime.Now.ToString("dd.MM.yyyy");
+            await Task.Run(() =>
+            {
+                System.Threading.Thread.Sleep(1000);
+            
             excel.Open();
             OleDbCommand cmd = new OleDbCommand("SELECT * FROM [KELIMELER$] WHERE TARIH=@p1", excel);
             cmd.Parameters.AddWithValue("@p1", tarih.ToString("dd.MM.yyyy"));
@@ -76,47 +103,71 @@ namespace DILIMIZINZENGINLIKLERI
                 sayi = int.Parse(dr[10].ToString());
                 if (sayi == 0)
                 {
-                    timer1.Start();
-                    checkTimer.Start();
-                    timer2.Start(); // form açılınca yazı başlasın
-                   sozcuk= dr[1].ToString() + "\n";
-                    sozcukanlam= dr[2].ToString() + "\n";
-                    sozcukcumle= dr[3].ToString() + "\n";
-                    deyim= dr[4].ToString() + "\n";
-                    deyimanlam= dr[5].ToString() + "\n";
-                    deyimcumle= dr[6].ToString() + "\n";
-                   atasozu = dr[7].ToString() + "\n";
-                    atasozuyazar= dr[8].ToString() + "\n";
-             
+
+                        this.Invoke(new Action(() => {
+                            sozcuk = dr[1].ToString();
+                            sozcukanlam = dr[2].ToString();
+                            sozcukcumle = dr[3].ToString();
+                            deyim = dr[4].ToString();
+                            deyimanlam = dr[5].ToString();
+                            deyimcumle = dr[6].ToString();
+                            atasozu = dr[7].ToString();
+                            atasozuyazar = dr[8].ToString();
+                            
+                            
+                        }));
+                       
+
+                    
+
                 }
                 else if (sayi == 1)
-                {  
-                    timer2.Interval = 150;
-                    tmrsozcukanlam.Interval = 150;
-                    tmrsozcukcumle.Interval = 150;
-                    tmrdeyim.Interval = 150;
-                    tmrdeyimanlam.Interval= 150;
-                    tmrdeyimcumle.Interval= 150;
-                    tmratasozu.Interval= 150;
-                    tmryazar.Interval= 150;
-                    timer1.Start();
-                    checkTimer.Start();
-                    timer2.Start();
-                    sozcuk = dr[1].ToString() + "\n";
-                    sozcukanlam = dr[2].ToString() + "\n";
-                    sozcukcumle = dr[3].ToString() + "\n";
-                    deyim = dr[4].ToString() + "\n";
-                    deyimanlam = dr[5].ToString() + "\n";
-                    deyimcumle = dr[6].ToString() + "\n";
-                    atasozu = dr[7].ToString() + "\n";
-                    atasozuyazar = dr[8].ToString() + "\n";
-                 
+                {
+                        this.Invoke(new Action(() => {
+                           sozcuk = dr[1].ToString();
+                    sozcukanlam = dr[2].ToString() ;
+                    sozcukcumle = dr[3].ToString();
+                    deyim = dr[4].ToString();
+                    deyimanlam = dr[5].ToString();
+                    deyimcumle = dr[6].ToString();
+                    atasozu = dr[7].ToString();
+                    atasozuyazar = dr[8].ToString();
+                        }));
+                       
+                    
+
 
                 }
 
             }
             excel.Close();
+            });
+
+            if (sayi == 0)
+            {
+                timer1.Start();
+                checkTimer.Start();
+                timer2.Start(); // form açılınca yazı başlasın
+            }
+            else if (sayi == 1)
+            {
+                timer2.Interval = 150;
+                tmrsozcukanlam.Interval = 150;
+                tmrsozcukcumle.Interval = 150;
+                tmrdeyim.Interval = 150;
+                tmrdeyimanlam.Interval = 150;
+                tmrdeyimcumle.Interval = 150;
+                tmratasozu.Interval = 150;
+                tmryazar.Interval = 150;
+
+                timer1.Start();
+                checkTimer.Start();
+                timer2.Start();
+            }
+            this.WindowState = FormWindowState.Maximized;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
+        
 
         
 
@@ -282,6 +333,8 @@ namespace DILIMIZINZENGINLIKLERI
             int indexsozcuk = lblsozcuk.Text.IndexOf(sozcuk);
             if (index < sozcuk.Length)
             {
+                
+
                 lblsozcuk.Text += sozcuk[index];
 
 
@@ -306,11 +359,23 @@ namespace DILIMIZINZENGINLIKLERI
 
             
         }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            
+            label1.Text = DateTime.Now.ToString("dd.MM.yyyy");
+            getir();
+        }
+
+       
+
         private void tmrsozcukanlam_Tick(object sender, EventArgs e)
         {
             if (index < sozcukanlam.Length)
             {
-               lblsozcukanlam.Text += sozcukanlam[index];
+              
+                lblsozcukanlam.Text += sozcukanlam[index];
                 if (sayi == 0)
                 {
                     daktilo.Play();
