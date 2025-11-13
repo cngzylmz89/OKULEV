@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.OleDb;
 using System.Xml.Linq;
 
 namespace PERFORMANS
@@ -1531,10 +1532,37 @@ namespace PERFORMANS
 
 
         }
-        private void frmdersprogrami_Load(object sender, EventArgs e)
+        int haftaici;
+        public int haftaal(DateTime dtPassed)
         {
 
-            
+            CultureInfo ciCurr = CultureInfo.CurrentCulture;
+            int weekNum = ciCurr.Calendar.GetWeekOfYear(dtPassed, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);
+            return weekNum;
+
+        }
+        private void frmdersprogrami_Load(object sender, EventArgs e)
+        {
+            int hafta = haftaal(DateTime.Now);
+            OleDbConnection con = new OleDbConnection(conn.baglan);
+            con.Open();
+            OleDbCommand komuthaftaoku = new OleDbCommand("select HAFTA FROM TBLDERSPROGRAMI", con);
+            OleDbDataReader komuthaftaokulrd = komuthaftaoku.ExecuteReader();
+            while (komuthaftaokulrd.Read())
+            {
+                haftaici = int.Parse(komuthaftaokulrd[0].ToString());
+            }
+            con.Close();
+
+            con.Open();
+            if (haftaici != hafta)
+            {
+                OleDbCommand komuthaftayidegistir = new OleDbCommand("update TBLDERSPROGRAMI SET HAFTA=@P1 , OLCDURUM=@P2", con);
+                komuthaftayidegistir.Parameters.AddWithValue("@P1", hafta);
+                komuthaftayidegistir.Parameters.AddWithValue("@P2", 0);
+                komuthaftayidegistir.ExecuteNonQuery();
+            }
+            con.Close();
             dersprogramigetir();
 
         }

@@ -250,7 +250,7 @@
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.OrangeRed;
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel2);
             this.splitContainer2.Size = new System.Drawing.Size(1235, 486);
-            this.splitContainer2.SplitterDistance = 859;
+            this.splitContainer2.SplitterDistance = 862;
             this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -274,7 +274,7 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer3.Size = new System.Drawing.Size(859, 486);
+            this.splitContainer3.Size = new System.Drawing.Size(862, 486);
             this.splitContainer3.SplitterDistance = 113;
             this.splitContainer3.SplitterWidth = 3;
             this.splitContainer3.TabIndex = 0;
@@ -395,7 +395,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(859, 370);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(862, 370);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -407,7 +407,7 @@
             this.label1.Location = new System.Drawing.Point(92, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 61);
+            this.label1.Size = new System.Drawing.Size(150, 61);
             this.label1.TabIndex = 0;
             this.label1.Text = "PAZARTESİ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -418,10 +418,10 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(245, 0);
+            this.label2.Location = new System.Drawing.Point(246, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 61);
+            this.label2.Size = new System.Drawing.Size(150, 61);
             this.label2.TabIndex = 1;
             this.label2.Text = "SALI";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -432,10 +432,10 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(398, 0);
+            this.label3.Location = new System.Drawing.Point(400, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 61);
+            this.label3.Size = new System.Drawing.Size(150, 61);
             this.label3.TabIndex = 2;
             this.label3.Text = "ÇARŞAMBA";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -446,10 +446,10 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(551, 0);
+            this.label4.Location = new System.Drawing.Point(554, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 61);
+            this.label4.Size = new System.Drawing.Size(150, 61);
             this.label4.TabIndex = 3;
             this.label4.Text = "PERŞEMBE";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -460,10 +460,10 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(704, 0);
+            this.label5.Location = new System.Drawing.Point(708, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 61);
+            this.label5.Size = new System.Drawing.Size(152, 61);
             this.label5.TabIndex = 4;
             this.label5.Text = "CUMA";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -574,7 +574,7 @@
             this.btnmonday1.Location = new System.Drawing.Point(92, 63);
             this.btnmonday1.Margin = new System.Windows.Forms.Padding(2);
             this.btnmonday1.Name = "btnmonday1";
-            this.btnmonday1.Size = new System.Drawing.Size(149, 40);
+            this.btnmonday1.Size = new System.Drawing.Size(150, 40);
             this.btnmonday1.TabIndex = 12;
             this.btnmonday1.Text = "  ";
             this.btnmonday1.UseVisualStyleBackColor = true;
@@ -588,7 +588,7 @@
             this.btnmonday2.Location = new System.Drawing.Point(92, 107);
             this.btnmonday2.Margin = new System.Windows.Forms.Padding(2);
             this.btnmonday2.Name = "btnmonday2";
-            this.btnmonday2.Size = new System.Drawing.Size(149, 40);
+            this.btnmonday2.Size = new System.Drawing.Size(150, 40);
             this.btnmonday2.TabIndex = 13;
             this.btnmonday2.Text = "  ";
             this.btnmonday2.UseVisualStyleBackColor = true;
@@ -602,7 +602,7 @@
             this.btnmonday3.Location = new System.Drawing.Point(92, 151);
             this.btnmonday3.Margin = new System.Windows.Forms.Padding(2);
             this.btnmonday3.Name = "btnmonday3";
-            this.btnmonday3.Size = new System.Drawing.Size(149, 40);
+            this.btnmonday3.Size = new System.Drawing.Size(150, 40);
             this.btnmonday3.TabIndex = 14;
             this.btnmonday3.Text = "  ";
             this.btnmonday3.UseVisualStyleBackColor = true;
@@ -616,7 +616,7 @@
             this.btnmonday4.Location = new System.Drawing.Point(92, 195);
             this.btnmonday4.Margin = new System.Windows.Forms.Padding(2);
             this.btnmonday4.Name = "btnmonday4";
-            this.btnmonday4.Size = new System.Drawing.Size(149, 40);
+            this.btnmonday4.Size = new System.Drawing.Size(150, 40);
             this.btnmonday4.TabIndex = 15;
             this.btnmonday4.Text = "  ";
             this.btnmonday4.UseVisualStyleBackColor = true;
@@ -630,7 +630,7 @@
             this.btnmonday5.Location = new System.Drawing.Point(92, 239);
             this.btnmonday5.Margin = new System.Windows.Forms.Padding(2);
             this.btnmonday5.Name = "btnmonday5";
-            this.btnmonday5.Size = new System.Drawing.Size(149, 40);
+            this.btnmonday5.Size = new System.Drawing.Size(150, 40);
             this.btnmonday5.TabIndex = 16;
             this.btnmonday5.Text = "  ";
             this.btnmonday5.UseVisualStyleBackColor = true;
@@ -644,7 +644,7 @@
             this.btnmonday6.Location = new System.Drawing.Point(92, 283);
             this.btnmonday6.Margin = new System.Windows.Forms.Padding(2);
             this.btnmonday6.Name = "btnmonday6";
-            this.btnmonday6.Size = new System.Drawing.Size(149, 40);
+            this.btnmonday6.Size = new System.Drawing.Size(150, 40);
             this.btnmonday6.TabIndex = 17;
             this.btnmonday6.Text = "  ";
             this.btnmonday6.UseVisualStyleBackColor = true;
@@ -658,7 +658,7 @@
             this.btnmonday7.Location = new System.Drawing.Point(92, 327);
             this.btnmonday7.Margin = new System.Windows.Forms.Padding(2);
             this.btnmonday7.Name = "btnmonday7";
-            this.btnmonday7.Size = new System.Drawing.Size(149, 41);
+            this.btnmonday7.Size = new System.Drawing.Size(150, 41);
             this.btnmonday7.TabIndex = 18;
             this.btnmonday7.Text = "  ";
             this.btnmonday7.UseVisualStyleBackColor = true;
@@ -669,10 +669,10 @@
             this.btntuesday1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntuesday1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btntuesday1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btntuesday1.Location = new System.Drawing.Point(245, 63);
+            this.btntuesday1.Location = new System.Drawing.Point(246, 63);
             this.btntuesday1.Margin = new System.Windows.Forms.Padding(2);
             this.btntuesday1.Name = "btntuesday1";
-            this.btntuesday1.Size = new System.Drawing.Size(149, 40);
+            this.btntuesday1.Size = new System.Drawing.Size(150, 40);
             this.btntuesday1.TabIndex = 19;
             this.btntuesday1.Text = "  ";
             this.btntuesday1.UseVisualStyleBackColor = true;
@@ -683,10 +683,10 @@
             this.btntuesday2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntuesday2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btntuesday2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btntuesday2.Location = new System.Drawing.Point(245, 107);
+            this.btntuesday2.Location = new System.Drawing.Point(246, 107);
             this.btntuesday2.Margin = new System.Windows.Forms.Padding(2);
             this.btntuesday2.Name = "btntuesday2";
-            this.btntuesday2.Size = new System.Drawing.Size(149, 40);
+            this.btntuesday2.Size = new System.Drawing.Size(150, 40);
             this.btntuesday2.TabIndex = 20;
             this.btntuesday2.Text = "  ";
             this.btntuesday2.UseVisualStyleBackColor = true;
@@ -697,10 +697,10 @@
             this.btntuesday3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntuesday3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btntuesday3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btntuesday3.Location = new System.Drawing.Point(245, 151);
+            this.btntuesday3.Location = new System.Drawing.Point(246, 151);
             this.btntuesday3.Margin = new System.Windows.Forms.Padding(2);
             this.btntuesday3.Name = "btntuesday3";
-            this.btntuesday3.Size = new System.Drawing.Size(149, 40);
+            this.btntuesday3.Size = new System.Drawing.Size(150, 40);
             this.btntuesday3.TabIndex = 21;
             this.btntuesday3.Text = "  ";
             this.btntuesday3.UseVisualStyleBackColor = true;
@@ -711,10 +711,10 @@
             this.btntuesday4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntuesday4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btntuesday4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btntuesday4.Location = new System.Drawing.Point(245, 195);
+            this.btntuesday4.Location = new System.Drawing.Point(246, 195);
             this.btntuesday4.Margin = new System.Windows.Forms.Padding(2);
             this.btntuesday4.Name = "btntuesday4";
-            this.btntuesday4.Size = new System.Drawing.Size(149, 40);
+            this.btntuesday4.Size = new System.Drawing.Size(150, 40);
             this.btntuesday4.TabIndex = 22;
             this.btntuesday4.Text = "  ";
             this.btntuesday4.UseVisualStyleBackColor = true;
@@ -725,10 +725,10 @@
             this.btntuesday5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntuesday5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btntuesday5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btntuesday5.Location = new System.Drawing.Point(245, 239);
+            this.btntuesday5.Location = new System.Drawing.Point(246, 239);
             this.btntuesday5.Margin = new System.Windows.Forms.Padding(2);
             this.btntuesday5.Name = "btntuesday5";
-            this.btntuesday5.Size = new System.Drawing.Size(149, 40);
+            this.btntuesday5.Size = new System.Drawing.Size(150, 40);
             this.btntuesday5.TabIndex = 23;
             this.btntuesday5.Text = "  ";
             this.btntuesday5.UseVisualStyleBackColor = true;
@@ -739,10 +739,10 @@
             this.btntuesday6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntuesday6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btntuesday6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btntuesday6.Location = new System.Drawing.Point(245, 283);
+            this.btntuesday6.Location = new System.Drawing.Point(246, 283);
             this.btntuesday6.Margin = new System.Windows.Forms.Padding(2);
             this.btntuesday6.Name = "btntuesday6";
-            this.btntuesday6.Size = new System.Drawing.Size(149, 40);
+            this.btntuesday6.Size = new System.Drawing.Size(150, 40);
             this.btntuesday6.TabIndex = 24;
             this.btntuesday6.Text = "  ";
             this.btntuesday6.UseVisualStyleBackColor = true;
@@ -753,10 +753,10 @@
             this.btntuesday7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntuesday7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btntuesday7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btntuesday7.Location = new System.Drawing.Point(245, 327);
+            this.btntuesday7.Location = new System.Drawing.Point(246, 327);
             this.btntuesday7.Margin = new System.Windows.Forms.Padding(2);
             this.btntuesday7.Name = "btntuesday7";
-            this.btntuesday7.Size = new System.Drawing.Size(149, 41);
+            this.btntuesday7.Size = new System.Drawing.Size(150, 41);
             this.btntuesday7.TabIndex = 25;
             this.btntuesday7.Text = "  ";
             this.btntuesday7.UseVisualStyleBackColor = true;
@@ -767,10 +767,10 @@
             this.btnwednesday1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnwednesday1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnwednesday1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnwednesday1.Location = new System.Drawing.Point(398, 63);
+            this.btnwednesday1.Location = new System.Drawing.Point(400, 63);
             this.btnwednesday1.Margin = new System.Windows.Forms.Padding(2);
             this.btnwednesday1.Name = "btnwednesday1";
-            this.btnwednesday1.Size = new System.Drawing.Size(149, 40);
+            this.btnwednesday1.Size = new System.Drawing.Size(150, 40);
             this.btnwednesday1.TabIndex = 26;
             this.btnwednesday1.Text = "  ";
             this.btnwednesday1.UseVisualStyleBackColor = true;
@@ -781,10 +781,10 @@
             this.btnwednesday2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnwednesday2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnwednesday2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnwednesday2.Location = new System.Drawing.Point(398, 107);
+            this.btnwednesday2.Location = new System.Drawing.Point(400, 107);
             this.btnwednesday2.Margin = new System.Windows.Forms.Padding(2);
             this.btnwednesday2.Name = "btnwednesday2";
-            this.btnwednesday2.Size = new System.Drawing.Size(149, 40);
+            this.btnwednesday2.Size = new System.Drawing.Size(150, 40);
             this.btnwednesday2.TabIndex = 27;
             this.btnwednesday2.Text = "  ";
             this.btnwednesday2.UseVisualStyleBackColor = true;
@@ -795,10 +795,10 @@
             this.btnwednesday3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnwednesday3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnwednesday3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnwednesday3.Location = new System.Drawing.Point(398, 151);
+            this.btnwednesday3.Location = new System.Drawing.Point(400, 151);
             this.btnwednesday3.Margin = new System.Windows.Forms.Padding(2);
             this.btnwednesday3.Name = "btnwednesday3";
-            this.btnwednesday3.Size = new System.Drawing.Size(149, 40);
+            this.btnwednesday3.Size = new System.Drawing.Size(150, 40);
             this.btnwednesday3.TabIndex = 28;
             this.btnwednesday3.Text = "  ";
             this.btnwednesday3.UseVisualStyleBackColor = true;
@@ -809,10 +809,10 @@
             this.btnwednesday4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnwednesday4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnwednesday4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnwednesday4.Location = new System.Drawing.Point(398, 195);
+            this.btnwednesday4.Location = new System.Drawing.Point(400, 195);
             this.btnwednesday4.Margin = new System.Windows.Forms.Padding(2);
             this.btnwednesday4.Name = "btnwednesday4";
-            this.btnwednesday4.Size = new System.Drawing.Size(149, 40);
+            this.btnwednesday4.Size = new System.Drawing.Size(150, 40);
             this.btnwednesday4.TabIndex = 29;
             this.btnwednesday4.Text = "  ";
             this.btnwednesday4.UseVisualStyleBackColor = true;
@@ -823,10 +823,10 @@
             this.btnwednesday5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnwednesday5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnwednesday5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnwednesday5.Location = new System.Drawing.Point(398, 239);
+            this.btnwednesday5.Location = new System.Drawing.Point(400, 239);
             this.btnwednesday5.Margin = new System.Windows.Forms.Padding(2);
             this.btnwednesday5.Name = "btnwednesday5";
-            this.btnwednesday5.Size = new System.Drawing.Size(149, 40);
+            this.btnwednesday5.Size = new System.Drawing.Size(150, 40);
             this.btnwednesday5.TabIndex = 30;
             this.btnwednesday5.Text = "  ";
             this.btnwednesday5.UseVisualStyleBackColor = true;
@@ -837,10 +837,10 @@
             this.btnwednesday6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnwednesday6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnwednesday6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnwednesday6.Location = new System.Drawing.Point(398, 283);
+            this.btnwednesday6.Location = new System.Drawing.Point(400, 283);
             this.btnwednesday6.Margin = new System.Windows.Forms.Padding(2);
             this.btnwednesday6.Name = "btnwednesday6";
-            this.btnwednesday6.Size = new System.Drawing.Size(149, 40);
+            this.btnwednesday6.Size = new System.Drawing.Size(150, 40);
             this.btnwednesday6.TabIndex = 31;
             this.btnwednesday6.Text = "  ";
             this.btnwednesday6.UseVisualStyleBackColor = true;
@@ -851,10 +851,10 @@
             this.btnwednesday7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnwednesday7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnwednesday7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnwednesday7.Location = new System.Drawing.Point(398, 327);
+            this.btnwednesday7.Location = new System.Drawing.Point(400, 327);
             this.btnwednesday7.Margin = new System.Windows.Forms.Padding(2);
             this.btnwednesday7.Name = "btnwednesday7";
-            this.btnwednesday7.Size = new System.Drawing.Size(149, 41);
+            this.btnwednesday7.Size = new System.Drawing.Size(150, 41);
             this.btnwednesday7.TabIndex = 32;
             this.btnwednesday7.Text = "  ";
             this.btnwednesday7.UseVisualStyleBackColor = true;
@@ -865,10 +865,10 @@
             this.btnthursday1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnthursday1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnthursday1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnthursday1.Location = new System.Drawing.Point(551, 63);
+            this.btnthursday1.Location = new System.Drawing.Point(554, 63);
             this.btnthursday1.Margin = new System.Windows.Forms.Padding(2);
             this.btnthursday1.Name = "btnthursday1";
-            this.btnthursday1.Size = new System.Drawing.Size(149, 40);
+            this.btnthursday1.Size = new System.Drawing.Size(150, 40);
             this.btnthursday1.TabIndex = 33;
             this.btnthursday1.Text = "  ";
             this.btnthursday1.UseVisualStyleBackColor = true;
@@ -879,10 +879,10 @@
             this.btnthursday2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnthursday2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnthursday2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnthursday2.Location = new System.Drawing.Point(551, 107);
+            this.btnthursday2.Location = new System.Drawing.Point(554, 107);
             this.btnthursday2.Margin = new System.Windows.Forms.Padding(2);
             this.btnthursday2.Name = "btnthursday2";
-            this.btnthursday2.Size = new System.Drawing.Size(149, 40);
+            this.btnthursday2.Size = new System.Drawing.Size(150, 40);
             this.btnthursday2.TabIndex = 34;
             this.btnthursday2.Text = "  ";
             this.btnthursday2.UseVisualStyleBackColor = true;
@@ -892,10 +892,10 @@
             // 
             this.btnthursday3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnthursday3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnthursday3.Location = new System.Drawing.Point(551, 151);
+            this.btnthursday3.Location = new System.Drawing.Point(554, 151);
             this.btnthursday3.Margin = new System.Windows.Forms.Padding(2);
             this.btnthursday3.Name = "btnthursday3";
-            this.btnthursday3.Size = new System.Drawing.Size(149, 40);
+            this.btnthursday3.Size = new System.Drawing.Size(150, 40);
             this.btnthursday3.TabIndex = 35;
             this.btnthursday3.Text = "  ";
             this.btnthursday3.UseVisualStyleBackColor = true;
@@ -906,10 +906,10 @@
             this.btnthursday4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnthursday4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnthursday4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnthursday4.Location = new System.Drawing.Point(551, 195);
+            this.btnthursday4.Location = new System.Drawing.Point(554, 195);
             this.btnthursday4.Margin = new System.Windows.Forms.Padding(2);
             this.btnthursday4.Name = "btnthursday4";
-            this.btnthursday4.Size = new System.Drawing.Size(149, 40);
+            this.btnthursday4.Size = new System.Drawing.Size(150, 40);
             this.btnthursday4.TabIndex = 36;
             this.btnthursday4.Text = "  ";
             this.btnthursday4.UseVisualStyleBackColor = true;
@@ -920,10 +920,10 @@
             this.btnthursday5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnthursday5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnthursday5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnthursday5.Location = new System.Drawing.Point(551, 239);
+            this.btnthursday5.Location = new System.Drawing.Point(554, 239);
             this.btnthursday5.Margin = new System.Windows.Forms.Padding(2);
             this.btnthursday5.Name = "btnthursday5";
-            this.btnthursday5.Size = new System.Drawing.Size(149, 40);
+            this.btnthursday5.Size = new System.Drawing.Size(150, 40);
             this.btnthursday5.TabIndex = 37;
             this.btnthursday5.Text = "  ";
             this.btnthursday5.UseVisualStyleBackColor = true;
@@ -934,10 +934,10 @@
             this.btnthursday6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnthursday6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnthursday6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnthursday6.Location = new System.Drawing.Point(551, 283);
+            this.btnthursday6.Location = new System.Drawing.Point(554, 283);
             this.btnthursday6.Margin = new System.Windows.Forms.Padding(2);
             this.btnthursday6.Name = "btnthursday6";
-            this.btnthursday6.Size = new System.Drawing.Size(149, 40);
+            this.btnthursday6.Size = new System.Drawing.Size(150, 40);
             this.btnthursday6.TabIndex = 38;
             this.btnthursday6.Text = "  ";
             this.btnthursday6.UseVisualStyleBackColor = true;
@@ -948,10 +948,10 @@
             this.btnthursday7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnthursday7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnthursday7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnthursday7.Location = new System.Drawing.Point(551, 327);
+            this.btnthursday7.Location = new System.Drawing.Point(554, 327);
             this.btnthursday7.Margin = new System.Windows.Forms.Padding(2);
             this.btnthursday7.Name = "btnthursday7";
-            this.btnthursday7.Size = new System.Drawing.Size(149, 41);
+            this.btnthursday7.Size = new System.Drawing.Size(150, 41);
             this.btnthursday7.TabIndex = 39;
             this.btnthursday7.Text = "  ";
             this.btnthursday7.UseVisualStyleBackColor = true;
@@ -962,10 +962,10 @@
             this.btnfriday1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfriday1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnfriday1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnfriday1.Location = new System.Drawing.Point(704, 63);
+            this.btnfriday1.Location = new System.Drawing.Point(708, 63);
             this.btnfriday1.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday1.Name = "btnfriday1";
-            this.btnfriday1.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday1.Size = new System.Drawing.Size(152, 40);
             this.btnfriday1.TabIndex = 40;
             this.btnfriday1.Text = "  ";
             this.btnfriday1.UseVisualStyleBackColor = true;
@@ -976,10 +976,10 @@
             this.btnfriday2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfriday2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnfriday2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnfriday2.Location = new System.Drawing.Point(704, 107);
+            this.btnfriday2.Location = new System.Drawing.Point(708, 107);
             this.btnfriday2.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday2.Name = "btnfriday2";
-            this.btnfriday2.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday2.Size = new System.Drawing.Size(152, 40);
             this.btnfriday2.TabIndex = 41;
             this.btnfriday2.Text = "  ";
             this.btnfriday2.UseVisualStyleBackColor = true;
@@ -990,10 +990,10 @@
             this.btnfriday3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfriday3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnfriday3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnfriday3.Location = new System.Drawing.Point(704, 151);
+            this.btnfriday3.Location = new System.Drawing.Point(708, 151);
             this.btnfriday3.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday3.Name = "btnfriday3";
-            this.btnfriday3.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday3.Size = new System.Drawing.Size(152, 40);
             this.btnfriday3.TabIndex = 42;
             this.btnfriday3.Text = "  ";
             this.btnfriday3.UseVisualStyleBackColor = true;
@@ -1004,10 +1004,10 @@
             this.btnfriday4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfriday4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnfriday4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnfriday4.Location = new System.Drawing.Point(704, 195);
+            this.btnfriday4.Location = new System.Drawing.Point(708, 195);
             this.btnfriday4.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday4.Name = "btnfriday4";
-            this.btnfriday4.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday4.Size = new System.Drawing.Size(152, 40);
             this.btnfriday4.TabIndex = 43;
             this.btnfriday4.Text = "  ";
             this.btnfriday4.UseVisualStyleBackColor = true;
@@ -1018,10 +1018,10 @@
             this.btnfriday5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfriday5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnfriday5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnfriday5.Location = new System.Drawing.Point(704, 239);
+            this.btnfriday5.Location = new System.Drawing.Point(708, 239);
             this.btnfriday5.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday5.Name = "btnfriday5";
-            this.btnfriday5.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday5.Size = new System.Drawing.Size(152, 40);
             this.btnfriday5.TabIndex = 44;
             this.btnfriday5.Text = "  ";
             this.btnfriday5.UseVisualStyleBackColor = true;
@@ -1032,10 +1032,10 @@
             this.btnfriday6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfriday6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnfriday6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnfriday6.Location = new System.Drawing.Point(704, 283);
+            this.btnfriday6.Location = new System.Drawing.Point(708, 283);
             this.btnfriday6.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday6.Name = "btnfriday6";
-            this.btnfriday6.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday6.Size = new System.Drawing.Size(152, 40);
             this.btnfriday6.TabIndex = 45;
             this.btnfriday6.Text = "  ";
             this.btnfriday6.UseVisualStyleBackColor = true;
@@ -1046,10 +1046,10 @@
             this.btnfriday7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfriday7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnfriday7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnfriday7.Location = new System.Drawing.Point(704, 327);
+            this.btnfriday7.Location = new System.Drawing.Point(708, 327);
             this.btnfriday7.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday7.Name = "btnfriday7";
-            this.btnfriday7.Size = new System.Drawing.Size(153, 41);
+            this.btnfriday7.Size = new System.Drawing.Size(152, 41);
             this.btnfriday7.TabIndex = 46;
             this.btnfriday7.Text = "  ";
             this.btnfriday7.UseVisualStyleBackColor = true;
@@ -1071,7 +1071,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(373, 486);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(370, 486);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panel1
@@ -1080,7 +1080,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 113);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(367, 88);
+            this.panel1.Size = new System.Drawing.Size(364, 88);
             this.panel1.TabIndex = 0;
             // 
             // groupBox2
@@ -1091,7 +1091,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(367, 88);
+            this.groupBox2.Size = new System.Drawing.Size(364, 88);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "PUANLAMA DURUMUNUZ";
@@ -1132,7 +1132,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 207);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(367, 31);
+            this.panel3.Size = new System.Drawing.Size(364, 31);
             this.panel3.TabIndex = 1;
             // 
             // groupBox1
@@ -1145,7 +1145,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox1.Size = new System.Drawing.Size(367, 31);
+            this.groupBox1.Size = new System.Drawing.Size(364, 31);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PUANLAMA ŞEKLİ";
@@ -1154,7 +1154,7 @@
             // 
             this.pckhand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pckhand.Image = global::PERFORMANS.Properties.Resources.icons8_hand_right_100px_1;
-            this.pckhand.Location = new System.Drawing.Point(105, 21);
+            this.pckhand.Location = new System.Drawing.Point(102, 21);
             this.pckhand.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pckhand.Name = "pckhand";
             this.pckhand.Size = new System.Drawing.Size(76, 45);
@@ -1196,7 +1196,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(367, 104);
+            this.panel4.Size = new System.Drawing.Size(364, 104);
             this.panel4.TabIndex = 2;
             // 
             // groupBox3
@@ -1208,7 +1208,7 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(367, 104);
+            this.groupBox3.Size = new System.Drawing.Size(364, 104);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "İŞLEMLER";
@@ -1270,7 +1270,7 @@
             this.panel5.Location = new System.Drawing.Point(2, 243);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(369, 241);
+            this.panel5.Size = new System.Drawing.Size(366, 241);
             this.panel5.TabIndex = 3;
             // 
             // groupBox4
@@ -1281,7 +1281,7 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(369, 241);
+            this.groupBox4.Size = new System.Drawing.Size(366, 241);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "PUANLANMAMIŞ DERSLER";
@@ -1296,7 +1296,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(2, 18);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(365, 221);
+            this.dataGridView1.Size = new System.Drawing.Size(362, 221);
             this.dataGridView1.TabIndex = 3;
             // 
             // timer1

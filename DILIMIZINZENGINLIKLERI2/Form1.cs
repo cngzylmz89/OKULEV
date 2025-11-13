@@ -13,12 +13,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using Microsoft.Win32;
+using System.Speech.Synthesis;
 
 
 namespace DILIMIZINZENGINLIKLERI
 {
-    public partial class Form1 : Form
+    public partial class DilimizinZenginlikleri : Form
     {
+        SpeechSynthesizer ses = new SpeechSynthesizer();
         // Kullanacağımız timer
         private Timer myTimer = new Timer();
         // Foreground kontrolü için yardımcı timer
@@ -30,21 +33,43 @@ namespace DILIMIZINZENGINLIKLERI
 
         string sozcuk, sozcukanlam, sozcukcumle, deyim, deyimanlam, deyimcumle, atasozu, atasozuyazar;
         string timer;
-        
-        
-       
-        public Form1()
+
+        private void AddToStartup()
+        {
+            string exePath = Application.ExecutablePath;
+            RegistryKey key = Registry.CurrentUser.OpenSubKey(
+                @"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
+            key.SetValue("BenimProgramim", exePath);
+        }
+
+        public DilimizinZenginlikleri()
         {
 
             InitializeComponent();
+            // Kenarlıkları kaldır
+            this.FormBorderStyle = FormBorderStyle.None;
+            // Normal moda al (Maximized yerine)
+            this.WindowState = FormWindowState.Normal;
+            // Ekranın tamamını kapla (görev çubuğu dahil)
+            this.Bounds = Screen.PrimaryScreen.Bounds;
+            // Üstte kalmasını istiyorsan
+            this.TopMost = true;
 
+           
+
+           
+
+
+            var currentScreen = Screen.FromControl(this);
+            this.Bounds = currentScreen.Bounds;
+
+            this.AutoScaleMode = AutoScaleMode.Dpi;
             checkTimer.Interval = 300; // 0.3 saniyede bir kontrol et
             checkTimer.Tick += CheckTimer_Tick;
           
         }
 
-        
-
+       
         private void CheckTimer_Tick(object sender, EventArgs e)
         {
             IntPtr fg = GetForegroundWindow();
@@ -60,11 +85,12 @@ namespace DILIMIZINZENGINLIKLERI
         int sayi;
         int saniye = 300;
         SoundPlayer daktilo = new SoundPlayer(Application.StartupPath + @"\ses.wav");
-        SoundPlayer orhan = new SoundPlayer(Application.StartupPath + @"\ses2.wav");
+        
         private void Form1_Load(object sender, EventArgs e)
         {
 
-           
+
+            AddToStartup();
             timer = "sozcuk";
             label1.Text = DateTime.Now.ToString("dd.MM.yyyy");
             excel.Open();
@@ -134,17 +160,7 @@ namespace DILIMIZINZENGINLIKLERI
         }
 
 
-        void muzikcal()
-        {
-            if(sayi==0&&lblatasozuyazar.Text=="Orhan Gencebay")
-            {
-
-                orhan.Play();
-            }
-           
-            
-        }
-
+       
         private void timer1_Tick(object sender, EventArgs e)
         {
             IntPtr
@@ -206,6 +222,7 @@ namespace DILIMIZINZENGINLIKLERI
                 }
                 if (timer=="sozcukcumle")
                 {
+                    
                     tmrsozcukcumle.Stop();
                 }
                 if (timer == "deyim")
@@ -294,14 +311,6 @@ namespace DILIMIZINZENGINLIKLERI
             {
                 lblsozcuk.Text += sozcuk[index];
 
-
-
-                if (sayi == 0)
-                {
-                    daktilo.Play();
-                }
-               
-                
                 index++;
             }
             else
@@ -321,10 +330,7 @@ namespace DILIMIZINZENGINLIKLERI
             if (index < sozcukanlam.Length)
             {
                lblsozcukanlam.Text += sozcukanlam[index];
-                if (sayi == 0)
-                {
-                    daktilo.Play();
-                }
+             
                 index++;
             }
             else
@@ -343,10 +349,7 @@ namespace DILIMIZINZENGINLIKLERI
             {
                 lblsozcukcumle.Text += sozcukcumle[index];
 
-                if (sayi == 0)
-                {
-                    daktilo.Play();
-                }
+             
 
                 index++;
             }
@@ -367,10 +370,7 @@ namespace DILIMIZINZENGINLIKLERI
             {
                 lbldeyim.Text += deyim[index];
 
-                if (sayi == 0)
-                {
-                    daktilo.Play();
-                }
+              
 
                 index++;
             }
@@ -390,11 +390,6 @@ namespace DILIMIZINZENGINLIKLERI
             {
                 lbldeyimanlam.Text += deyimanlam[index];
 
-                if (sayi == 0)
-                {
-                    daktilo.Play();
-                }
-
                 index++;
             }
             else
@@ -413,11 +408,6 @@ namespace DILIMIZINZENGINLIKLERI
             {
                 lbldeyimcumle.Text += deyimcumle[index];
 
-                if (sayi == 0)
-                {
-                    daktilo.Play();
-                }
-
                 index++;
             }
             else
@@ -435,11 +425,6 @@ namespace DILIMIZINZENGINLIKLERI
             if (index < atasozu.Length)
             {
                 lblatasozsoz.Text += atasozu[index];
-
-                if (sayi == 0)
-                {
-                    daktilo.Play();
-                }
 
                 index++;
             }
@@ -460,16 +445,12 @@ namespace DILIMIZINZENGINLIKLERI
             {
                 lblatasozuyazar.Text+= atasozuyazar[index];
 
-                if (sayi == 0 ) ;
-                {
-                    daktilo.Play();
-                }
 
                 index++;
             }
             else
             {
-                muzikcal();
+                
                 tmryazar.Stop();
                 index = 0;
                 timer = "bitti";
